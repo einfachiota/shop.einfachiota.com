@@ -13,3 +13,5 @@ jobs:
         source_branch: "gh-pages"
         destination_branch: "gh-pages"
         github_token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Fix CANME file
+      run: ./fix_cname.sh
